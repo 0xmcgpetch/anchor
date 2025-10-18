@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "programs/unsafe-unchecked-admin",
+]
+resolver = "2"

@@ -1,0 +1,18 @@
+[package]
+name = "unsafe-unchecked-admin"
+version = "0.1.0"
+edition = "2021"
+description = "Demonstrates unsafe UncheckedAccount in a privileged context"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "unsafe_unchecked_admin"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = { path = "../../../../lang" }

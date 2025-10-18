@@ -1,0 +1,12 @@
+{
+  "name": "vuln-unchecked-admin",
+  "version": "0.1.0",
+  "license": "(MIT OR Apache-2.0)",
+  "scripts": {
+    "test": "echo 'Use anchor test if anchor is available'"
+  },
+  "dependencies": {
+    "mocha": "9.2.2",
+    "chai": "^4.3.7"
+  }
+}
