@@ -1,0 +1,13 @@
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+# Use the locally built program pubkey
+missing_signer_check = "EUFqStpHaAdFnLVpfykXhvah1obeh6suB9XeFU9DTxdU"
+
+[workspace]
+members = ["programs/missing-signer-check"]
+
+[scripts]
+test = "export ANCHOR_WALLET=~/.config/solana/id.json && export ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 && yarn run ts-mocha -t 1000000 -p ./tsconfig.json tests/**/*.ts"

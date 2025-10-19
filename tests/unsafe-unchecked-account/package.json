@@ -1,0 +1,14 @@
+{
+  "name": "unsafe-unchecked-account",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "test": "anchor test"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "link:",
+    "@solana/web3.js": "^1.95.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

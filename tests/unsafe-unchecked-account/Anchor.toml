@@ -1,0 +1,12 @@
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+unsafe_unchecked_account = "QB7FhB7nRdL18x8teKV5LsiYCP8YnduXZUVye4kfoWr"
+
+[workspace]
+members = ["programs/unsafe-unchecked-account"]
+
+[scripts]
+test = "export ANCHOR_WALLET=~/.config/solana/id.json && export ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 && yarn ts-node scripts/run.ts"
