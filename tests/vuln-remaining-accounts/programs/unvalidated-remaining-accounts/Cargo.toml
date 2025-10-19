@@ -1,0 +1,19 @@
+[package]
+name = "unvalidated-remaining-accounts"
+version = "0.1.0"
+edition = "2021"
+description = "Demonstrates unvalidated remaining_accounts processing"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "unvalidated_remaining_accounts"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { path = "../../../../lang" }
+anchor-spl = { path = "../../../../spl" }

@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "programs/unvalidated-remaining-accounts",
+]
+resolver = "2"

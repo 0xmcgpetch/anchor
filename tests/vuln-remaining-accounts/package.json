@@ -1,0 +1,12 @@
+{
+  "name": "vuln-remaining-accounts",
+  "version": "0.1.0",
+  "license": "(MIT OR Apache-2.0)",
+  "scripts": {
+    "test": "anchor test"
+  },
+  "dependencies": {
+    "mocha": "9.2.2",
+    "chai": "^4.3.7"
+  }
+}
